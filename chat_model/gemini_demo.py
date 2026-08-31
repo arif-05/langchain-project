@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI(
+llm = ChatGoogleGenerativeAI(
     model="gemini-3.6-flash"
 )
 
-result = model.invoke("what is the capital of Bangladesh?")
+result = llm.invoke("what is the capital of Bangladesh?")
 
 print(result.content)
